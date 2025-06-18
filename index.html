@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Informace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    .info {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info">Jméno: Jan Karlík</div>
+  <div class="info">Firma: GitHub</div>
+  <div class="info">Dnešní datum: <span id="datum"></span></div>
+
+  <script>
+    // Získání dnešního data a jeho zobrazení
+    const dnes = new Date();
+    const formatovaneDatum = dnes.toLocaleDateString("cs-CZ", {
+      weekday: "long", year: "numeric", month: "long", day: "numeric"
+    });
+    document.getElementById("datum").textContent = formatovaneDatum;
+  </script>
+
+</body>
+</html>
