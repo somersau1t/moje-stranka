@@ -26,8 +26,15 @@
       gap: 40px;
     }
 
+    .left-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
     .left-img {
-      width: 350px;
+      width: 200px;
       border-radius: 15px;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
@@ -71,8 +78,14 @@
 <body>
 
   <div class="main-wrapper">
-    <img src="toystory.webp" alt="Toy Story" class="left-img">
+    <!-- Levý sloupec s obrázky -->
+    <div class="left-column">
+      <img src="xyz.png" alt="XYZ" class="left-img">
+      <img src="abc.png" alt="ABC" class="left-img">
+      <img src="toystory.webp" alt="Toy Story" class="left-img">
+    </div>
 
+    <!-- Box s profilem -->
     <div class="container">
       <h1>Profil uživatele</h1>
       <div class="info">Jméno: Jan Karlík</div>
@@ -95,4 +108,3 @@
 
 </body>
 </html>
-
