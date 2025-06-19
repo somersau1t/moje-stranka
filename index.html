@@ -3,22 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Vlastimil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       padding: 30px;
+      margin: 0;
+      background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
     .info {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin: 10px 0;
+      color: #555555;
+    }
+
+    .profil-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <div class="info">Jméno: Jan Karlík</div>
-  <div class="info">Poskytovatel: GitHub</div>
-  <div class="info">Dnešní datum: <span id="datum"></span></div>
+  <div class="container">
+    <h1>Profil uživatele</h1>
+    <div class="info">Jméno: Jan Karlík</div>
+    <div class="info">Poskytovatel: GitHub</div>
+    <div class="info">Dnešní datum: <span id="datum"></span></div>
+
+    <img src="AAA.jpg" alt="AAA" class="profil-img">
+  </div>
 
   <script>
     // Získání dnešního data a jeho zobrazení
@@ -28,8 +66,6 @@
     });
     document.getElementById("datum").textContent = formatovaneDatum;
   </script>
-
-  <img src="AAA.jpg" alt="AAA" style="width: 300px; height: auto;">
 
 </body>
 </html>
