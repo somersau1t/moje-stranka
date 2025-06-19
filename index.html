@@ -24,6 +24,7 @@
       align-items: center;
       justify-content: center;
       gap: 40px;
+      flex-wrap: wrap;
     }
 
     .left-column {
@@ -60,12 +61,39 @@
       color: #555555;
     }
 
+    .profil-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .arrow {
+      font-size: 2em;
+      animation: bounce 1.5s infinite;
+      color: #333;
+    }
+
+    .arrow-text {
+      font-size: 1em;
+      color: #333;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
     .profil-img {
-      width: 100%;
-      max-width: 250px;
+      width: 200px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      margin-top: 15px;
       cursor: pointer;
       transition: transform 0.2s;
     }
@@ -78,7 +106,7 @@
 <body>
 
   <div class="main-wrapper">
-    <!-- Levý sloupec s většími obrázky -->
+    <!-- Levý sloupec -->
     <div class="left-column">
       <img src="xyz.png" alt="XYZ" class="left-img">
       <img src="abc.png" alt="ABC" class="left-img">
@@ -90,6 +118,12 @@
       <div class="info">Jméno: Jan Karlík</div>
       <div class="info">Poskytovatel: GitHub</div>
       <div class="info">Dnešní datum: <span id="datum"></span></div>
+    </div>
+
+    <!-- Sekce s fotkou a šipkou -->
+    <div class="profil-section">
+      <div class="arrow">⬇️</div>
+      <div class="arrow-text">Klikni sem</div>
       <a href="https://www.drobas.fun" target="_blank">
         <img src="AAA.jpg" alt="AAA" class="profil-img">
       </a>
@@ -97,7 +131,7 @@
   </div>
 
   <script>
-    // Získání dnešního data a jeho zobrazení
+    // Získání dnešního data
     const dnes = new Date();
     const formatovaneDatum = dnes.toLocaleDateString("cs-CZ", {
       weekday: "long", year: "numeric", month: "long", day: "numeric"
@@ -107,4 +141,3 @@
 
 </body>
 </html>
-
