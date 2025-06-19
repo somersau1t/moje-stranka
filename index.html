@@ -16,13 +16,24 @@
       height: 100vh;
     }
 
+    .main-wrapper {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .left-img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
     .container {
       background-color: #ffffff;
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       padding: 30px;
       max-width: 400px;
-      width: 100%;
       text-align: center;
     }
 
@@ -49,13 +60,16 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>Profil uživatele</h1>
-    <div class="info">Jméno: Jan Karlík</div>
-    <div class="info">Poskytovatel: GitHub</div>
-    <div class="info">Dnešní datum: <span id="datum"></span></div>
+  <div class="main-wrapper">
+    <img src="toystory.webp" alt="Toy Story" class="left-img">
 
-    <img src="AAA.jpg" alt="AAA" class="profil-img">
+    <div class="container">
+      <h1>Profil uživatele</h1>
+      <div class="info">Jméno: Jan Karlík</div>
+      <div class="info">Poskytovatel: GitHub</div>
+      <div class="info">Dnešní datum: <span id="datum"></span></div>
+      <img src="AAA.jpg" alt="AAA" class="profil-img">
+    </div>
   </div>
 
   <script>
