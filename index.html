@@ -59,6 +59,12 @@
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .profil-img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -72,7 +78,9 @@
       <div class="info">Jméno: Jan Karlík</div>
       <div class="info">Poskytovatel: GitHub</div>
       <div class="info">Dnešní datum: <span id="datum"></span></div>
-      <img src="AAA.jpg" alt="AAA" class="profil-img">
+      <a href="https://www.drobas.fun" target="_blank">
+        <img src="AAA.jpg" alt="AAA" class="profil-img">
+      </a>
     </div>
   </div>
 
@@ -87,3 +95,4 @@
 
 </body>
 </html>
+
