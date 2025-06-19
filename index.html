@@ -5,33 +5,36 @@
   <title>Vlastimil</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      padding: 30px;
       margin: 0;
       background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
     }
 
     .main-wrapper {
       display: flex;
-      gap: 30px;
       align-items: center;
+      gap: 40px;
     }
 
     .left-img {
-      width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
     .container {
       background-color: #ffffff;
       border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
       padding: 30px;
       max-width: 400px;
       text-align: center;
@@ -68,7 +71,9 @@
       <div class="info">Jméno: Jan Karlík</div>
       <div class="info">Poskytovatel: GitHub</div>
       <div class="info">Dnešní datum: <span id="datum"></span></div>
+      <a hreh="http://drobas.fun/" target = "_blank">
       <img src="AAA.jpg" alt="AAA" class="profil-img">
+      </a>
     </div>
   </div>
 
